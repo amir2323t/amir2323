@@ -236,7 +236,7 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {118682430},--Sudo users
+    sudo_users = {68747297,172871742},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Creed bot 2.3
@@ -341,195 +341,180 @@ You Can user both "!" & "/" for them
 
 ]],
     help_text = [[
-bots Help for mods : Plugins
 
-Banhammer : 
+📜لیست دستورات مدیریت گروه:
 
+⛔️حذف کردن کاربر⛔️
 
-Help For Banhammer دستوراتی برای کنترل گروه
+!kick [ایدی یوزر/یوزنیم/ریپلی]
 
-!Kick @UserName or ID 
-شخصی را از گروه حذف کنید . همچنین با ریپلی هم میشه
+⛔️حذف همیشه کاربر ⛔️
 
-!Ban @UserName or ID
-برای بن کردن شخص اسفاده میشود . با ریپلی هم میشه
+!ban [ایدی/یوزنیم/ریپلی]
 
+⛔️حذف بن کردن (انا بن)⛔️
 
-!Unban @UserName
-برای آنبن کردن شخصی استفاده میشود . همچنین با ریپلی هم میشه
+!unban [ای دی/یوزنیم/ریپلی]
 
-For Admins :
+⛔️حذف کردن خود در گروه⛔️
 
-!banall ID
-برای بن گلوبال کردن از تمامی گروه هاست باید ای دی بدین با ریپلی هم میشه
+!kickme
 
-!unbanall ID
-برای آنبن کردن استفاده میشود ولی فقط با ای دی میشود
+🌐دریافت لیست مدیران گروه🌐
+!modlist
 
-〰〰〰〰〰〰〰〰〰〰
-2. GroupManager :
+💠افزودن یک مدیر به گروه🏧
+!promote [ای دی/یوزنیم]
 
-!lock leave
-اگر کسی از گروه برود نمیتواند برگردد
+⛔️حذف کردن یک مدیر⛔️
 
-!lock tag
-برای مجوز ندادن به اعضا از استفاده کردن @  و #  برای تگ
+!demote [ای دی/یوزنیم]
 
+⭕️توضیحات گروه⭕️
 
-!Creategp "GroupName"
-you can Create group with this comman
-با این دستور برای ساخت گروه استفاده بکنید
+!about
 
+💢قوانین گروه💢
 
-!lock member
-For locking Inviting users
-برای جلوگیری از آمدن اعضای جدید استفاده میشود
+!rules
 
+🌇انتخاب عکس برای گروه🗽
 
-!lock bots
-for Locking Bots invitation
-برای جلوگیری از ادد کردن ربا استفاده میشود
+!setphoto
 
+📄گذاشتن قوانین در گروه خود📜
 
-!lock name
-To lock the group name for every bodey
-برای قفل کردن اسم استفاده میشود
+!set rules (متن)
 
-!setflood set the group flood control  
-تعداد اسپم را در گروه تعیین میکنید
+📄گذاشتن توضیحات گروه خود📜
+
+!set about (متن)
+
+🔒قفل کردن ٫اعضا٫نام گروه٫روبات و.....
+
+!lock
+[member | name | bots | tag | adds | badw | join | arabic | eng | sticker | leave ]
+
+🔓باز کردن قفل٫ اعضا٫نام گروه و.....
+
+!unlock
+[member | name | bots | tag | adds | badw | join | arabic | eng | sticker | leave]
+
+📯دریافت ای دی تلگرامی خود📥
+
+!id @username
+
+📥دریافت اطلاعات کربری و مقام خود📤
+
+!info @username
+
+⚙دریافت تنظیمات گروه⚙
 
 !settings
-Watch group settings
-تنظیمات فعلی گروه را میبینید
 
-!owner
-watch group owner
-آیدی سازنده گروه رو میبینید
-
-!setowner user_id
-You can set someone to the group owner‼️
-برای گروه سازنده تعیین میکنید 
-
-!modlist
-catch Group mods
-لیست مدیران گروه را میگیرید
-
-!lock adds 
-to lock commercial Breaks and Other group links in group
-از دادن لینک گروه یا سایت یا هرچیز دیگه توی گروه جلوگیری میکند .
-
-!lock eng
-You cannot speak english in group
-از حرف زدن انگلیسی توی گروه جلوگیری میکند
-
-!lock settings
-To lock settings of group and unchange able
-برای قفل کردن تنظیمات گروه به کار میره
-
-!lock badw
-To lock using badwords in group
-برای جلوگیری از استفاده کردن حرف های رکیک استفاده میشود
-
-
-!lock join 
-to lock joining the group by link
-برای جلوگیری از وارد شدن به کروه با لینک
-
-
-!lock flood
-lock group flood
-از اسپم دادن در گروه جلوگیری کنید
-
-!unlock (bots-member-flood-photo-name-tag-link-join-Arabic)
-Unlock Something
-موارد بالا را با این دستور آزاد میسازید
-
-!rules  && !set rules
-TO see group rules or set rules
-برای دیدن قوانین گروه و یا انتخاب قوانین 
-
-!about or !set about
-watch about group or set about
-در مورد توضیحات گروه میدهد و یا توضیحات گروه رو تعیین کنید 
-
-!res @username
-see Username INfo
-در مورد اسم و ای دی شخص بهتون میده 
-
-!who
-Get Ids Chat
-همه ی ای دی های موجود در چت رو بهتون میده
-
-!log 
-get members id
-تمامی فعالیت های انجام یافته توسط شما و یا مدیران رو نشون میده
-
-!all
-Says every thing he knows about a group
-در مورد تمامی اطلاعات ثبت شده در مورد گروه میدهد
-
+🔧تغییر دادن لین گروه⚔
 
 !newlink
-Changes or Makes new group link
-لینک گروه رو عوض میکنه 
+
+🔧دریافت لینک گروه🛡
 
 !link
-gets The Group link
-لینک گروه را در گروه نمایش میده
+
+⚖دریافت لینک گروه در پی وی خود🔩
 
 !linkpv
-sends the group link to the PV
-برای دریافت لینک در پیوی استفاده میشه 
-〰〰〰〰〰〰〰〰
-Admins :
 
-!add
-to add the group as knows
-برای مجوز دادن به ربات برای استفاده در گروه
+💎انتخاب مالک گروه🛃
 
+!setowner (ای دی/یوزنیم)
 
-!rem
-to remove the group and be unknown
-برای ناشناس کردن گروه برای ربات توسط مدیران اصلی
+🚹حساس بودن به اسپم🆗
 
-!setgpowner (Gpid) user_id
-For Set a Owner of group from realm
- برای تعیین سازنده ای برای گروه  از گروه مادر
+!setflood [2-85]
 
-!addadmin [Username]
-to add a Global admin to the bot
-برای ادد کردن ادمین اصلی ربات
+🛃دریافت لیست افراد گروه🛃
 
+!who
 
-!removeadmin [username]
-to remove an admin from global admins
-برای صلب ادمینی از ادمینای اصلی
+🌐دریافت امار در قالب متنی➿
 
-!sms [id] (text)
-To send a message to an account by his/her ID
-برای فرستادن متنی توسط ربات به شخصی با ای دی اون
+!stats
 
+✳️سیو کردن متنی❇️
 
-〰〰〰〰〰〰〰〰〰〰〰
-3.!stats
-To see the group stats
-برای دیدن آمار گروه 
+!save 🌀متن خود🌀
 
-〰〰〰〰〰〰〰〰
-4. Feedback
-!feedback (text)
-To send your ideas to the Moderation group
-برای فرستادن انتقادات و پیشنهادات و حرف خود با مدیر ها استفاده میشه
+💠دریافت متن سیو شده🌀
 
-〰〰〰〰〰〰〰〰〰〰〰
-5. Tagall
-!tagall (text)
-To tags the every one and sends your message at bottom
-تگ کردن همه ی اعضای گروه و نوشتن پیام شما زیرش
+!get [value]
 
+⚠️حذف ٫قوانین٫مدیران٫اعضا و....⚜
 
-You Can user both "!" & "/" for them
-می توانید از دو شکلک !  و / برای دادن دستورات استفاده کنید
+!clean [modlist | rules | about]
+
+♻️دریافت یوزر ای دی یک کاربر🔆
+
+!res (ای دی کاربر)
+
+🚸دریافت گزارشات گروه⭕️
+
+!log
+
+♨️دریافت لیست افراد بن شده♨️
+
+!banlist
+
+🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷
+
+⚠️لیست دستورات ابزار ها:
+
+📲ماشین حساب📱
+
+حساب (عدد مرده نظر)
+
+⚠️توجه هتمن عدد ها به اینگیلیسی باشند🕹
+
+🖲دستورات ماشین حساب📡
+
+(+)این یعنی جمع کردن✅
+(-)این یعنی تفریق کردن✅
+(*)این یعنی ضرب کردن✅
+(/)این یعنی تقسیم کردن✅
+
+♻️تکرار متن مورد نظر شما♻️
+
+بگو (متن)
+
+🌐ساخت عکس نوشته➿
+
+!conv (متن)
+
+🌀جست و جو در گوگلⓂ️
+
+!google (متن)
+
+🌀ارتباط با پشتیبانی روبات🌐
+
+!feedback (متن شما)
+
+🚹راهنمای ربات 🚹
+
+!help
+🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷
+@mr_ITN_TG
+🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷🇮🇷
+میتوانید از هر این علامت ها هم استفاده کنید/ یا !
+پلاگین ها :
+!qr [text] / [link]
+تبدیل متن به بارکد 
+
+!webshot https://link 
+عکس از صفحه وب 
+
+!wiki [text] 
+ سرچ در ویکی پدیا 
+
+(اب و هوا (شهر
 
 ]]
 
