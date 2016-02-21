@@ -14,7 +14,8 @@ return {
   description = "Reply Your Sent Message",
   usage = "/echo (message) : reply message",
   patterns = {
-    "^[!/]echo +(.+)$"
+    "^[!/]echo +(.+)$",
+    "^بگو +(.+)&"
   }, 
 	run = run,
 	moderated = true
