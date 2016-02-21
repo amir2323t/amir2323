@@ -53,7 +53,7 @@ return {
   usage = "!weather (city)",
   patterns = {
     "^!weather$",
-    "^!اب و هوا (.*)$"
+    "^اب و هوا (.*)$"
   },
   run = run
 }
