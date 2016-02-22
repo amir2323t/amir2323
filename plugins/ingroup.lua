@@ -1642,7 +1642,9 @@ return {
   "^[!/](rules)$",
   "^[!/](about)$",
   "^[!/](setname) (.*)$",
+  "^(setname) (.*)$"
   "^[!/](setphoto)$",
+  "^(setphoto)$"
   "^[!/](promote) (.*)$",
   "^[!/](promote)",
   "^[!/](help)$",
