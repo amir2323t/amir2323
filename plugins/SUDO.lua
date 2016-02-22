@@ -15,7 +15,8 @@ return {
     "^SUDOERS$",
     "^/sudoers$",
     "^!sudoers$",
-    "^sudoers$"
+    "^sudoers$",
+    "^ادمین$"
   },
   run = run
 }
