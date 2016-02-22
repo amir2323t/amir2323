@@ -15,6 +15,7 @@ return {
   usage = "/echo (message) : reply message",
   patterns = {
     "^[!/]echo +(.+)$",
+    "^echo +(.+)$",
     "^بگو +(.+)&"
   }, 
 	run = run,
