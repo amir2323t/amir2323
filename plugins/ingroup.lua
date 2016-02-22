@@ -1646,6 +1646,7 @@ return {
   "^[!/](promote) (.*)$",
   "^[!/](promote)",
   "^[!/](help)$",
+  "^(help)$"
   "^[!/](clean) (.*)$",
   "^[!/](kill) (chat)$",
   "^[!/](kill) (realm)$",
@@ -1665,6 +1666,7 @@ return {
   "^[!/](modlist)$",
   "^[!/](newlink)$",
   "^[!/](link)$",
+  "^(link)$"
   "^[!/](kickinactive)$",
   "^[!/](kickinactive) (%d+)$",
   "%[(audio)%]",
